@@ -31,7 +31,6 @@ const toDoTasks = [
   },
 ];
 
-
 // Create the task from the todoTasks object
 
 const displayTasks = () => {
