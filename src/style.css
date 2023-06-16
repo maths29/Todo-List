@@ -29,13 +29,19 @@ h1 {
 }
 
 .top-block h2::after {
-  content: '';
+  /* content: '';
   display: block;
   position: relative;
   width: 101.5%;
   border-bottom: 2px solid rgba(252, 252, 252, 0.6);
   margin-top: 0.5rem;
-  margin-left: -10px;
+  margin-left: -10px; */
+
+  content: '';
+  display: block;
+  position: relative;
+  border-bottom: 2px solid rgba(252, 252, 252, 0.6);
+  margin-top: 0.5rem;
 }
 
 .add-input {
@@ -44,6 +50,19 @@ h1 {
   height: 2rem;
   padding: 2%;
   background-color: rgba(252, 252, 252, 0.6);
+  width: 483px;
+}
+
+.fa-plus {
+  color: gray;
+  position: absolute;
+  margin-top: 97.5px;
+  right: 32%;
+  cursor: pointer;
+}
+
+.fa-plus:hover {
+  color: #7bc24c;
 }
 
 ul {
@@ -73,16 +92,43 @@ li {
 
 .fa-trash-can {
   margin-top: 1.25rem;
+  margin-left: 1rem;
 }
 
 .clearBtn {
-  border: none;
-  height: 4rem;
+  height: 3.3rem;
   font-size: 1rem;
   color: rgb(144, 146, 148);
   cursor: pointer;
+  border: 0.2px solid lightgray;
 }
 
 .clearBtn:hover {
   background-color: rgb(247, 228, 152);
+  color: black;
+}
+
+.fa-trash-can:hover {
+  color: red;
+  transform: rotate(-15deg);
+}
+
+.fa-pen:hover {
+  color: rgb(4, 255, 4);
+}
+
+.editInput {
+  border: none;
+  height: 3rem;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background: rgb(247, 251, 255);
+  border-radius: 5%;
+  margin-left: 3%;
+}
+
+.checkEdit {
+  background-color: #cedce1;
+  border: none;
+  color: black;
 }
