@@ -17,8 +17,7 @@ h1 {
   margin: 0 30% 0 30%;
   display: flex;
   flex-direction: column;
-
-  /* align-items: left; */
+  width: 300px;
   background-color: #cedce1;
   border-radius: 2%;
 }
@@ -29,14 +28,6 @@ h1 {
 }
 
 .top-block h2::after {
-  /* content: '';
-  display: block;
-  position: relative;
-  width: 101.5%;
-  border-bottom: 2px solid rgba(252, 252, 252, 0.6);
-  margin-top: 0.5rem;
-  margin-left: -10px; */
-
   content: '';
   display: block;
   position: relative;
@@ -50,7 +41,7 @@ h1 {
   height: 2rem;
   padding: 2%;
   background-color: rgba(252, 252, 252, 0.6);
-  width: 483px;
+  width: 287px;
 }
 
 .fa-plus {
