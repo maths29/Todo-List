@@ -14,9 +14,10 @@ h1 {
 
 .top-block {
   padding: 0;
-  margin: 0 30% 0 30%;
+  margin: 0 38% 0 38%;
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
   width: 300px;
   background-color: #cedce1;
   border-radius: 2%;
