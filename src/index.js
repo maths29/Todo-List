@@ -1,7 +1,9 @@
 import './style.css';
 import {
   displayTasksOnWebPage, addItem, removeItem, storageInfo,
-} from './AddandRemoveTask.js';
+} from './modules/AddandRemoveTask.js';
+// eslint-disable-next-line no-unused-vars
+import clearCompleted from './modules/ClearDoneTask.js';
 
 const TaskListBlock = document.querySelector('.todo-block');
 const addInTodo = document.querySelector('.form');
@@ -59,4 +61,8 @@ TaskListBlock.addEventListener('click', (e) => {
       };
     }
   }
+});
+const complete = document.getElementsByClassName('clearBtn')[0];
+complete.addEventListener('click', () => {
+  clearCompleted();
 });

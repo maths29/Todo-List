@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import handleCheckbox from './checkBox.js';
+
 const TaskListBlock = document.querySelector('.todo-block');
 
 class TodoTasks {
@@ -13,7 +16,8 @@ class TodoTasks {
     listItem.className = 'lists';
     listItem.innerHTML = `
           <div class="listLP">
-          <input type="checkbox" name="" id="${task.id}">
+          <input type="checkbox" name="" id="${task.id}" 
+          onclick="handleCheckbox(${task.id})">
           <p id="${task.id}">${task.description}</p>
           </div>
           
