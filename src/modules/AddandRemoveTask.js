@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import handleCheckbox from './checkBox.js';
+
 const TaskListBlock = document.querySelector('.todo-block');
 
 class TodoTasks {
@@ -11,9 +14,11 @@ class TodoTasks {
     const listItem = document.createElement('li');
     listItem.id = task.id;
     listItem.className = 'lists';
-    listItem.innerHTML = `
+    if (task.completed === true) {
+      listItem.innerHTML = `
           <div class="listLP">
-          <input type="checkbox" name="" id="${task.id}">
+          <input type="checkbox" name="" id="check-${task.id}" checked
+          onclick="handleCheckbox(${task.id})">
           <p id="${task.id}">${task.description}</p>
           </div>
           
@@ -23,6 +28,22 @@ class TodoTasks {
           <i id="delete" class="fa-solid fa-trash-can"></i>
           </div>
           `;
+    } else {
+      listItem.innerHTML = `
+          <div class="listLP">
+          <input type="checkbox" name="" id="check-${task.id}" 
+          onclick="handleCheckbox(${task.id})">
+          <p id="${task.id}">${task.description}</p>
+          </div>
+          
+          <div class="trash">
+          
+          <i id="pen" class="fa-solid fa-pen"></i>
+          <i id="delete" class="fa-solid fa-trash-can"></i>
+          </div>
+          `;
+    }
+
     TaskListBlock.appendChild(listItem);
   };
 
