@@ -30,7 +30,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome-Books- HTML, CSS, JS] <a name="about-project"></a>
+# 📖 [Todo List- HTML, CSS, JS] <a name="about-project"></a>
 
 This is the first project of Module 2
 
