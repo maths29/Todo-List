@@ -18,7 +18,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 300px;
-  background-color: #cedce1;
+  background-color: #d1e4ec;
   border-radius: 2%;
 }
 
@@ -105,7 +105,7 @@ li {
 }
 
 .fa-pen:hover {
-  color: rgb(4, 255, 4);
+  color: rgb(17, 255, 17);
 }
 
 .editInput {
